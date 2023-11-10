@@ -1,0 +1,53 @@
+#input-container {
+    margin-top: 3%;
+    margin-left: 3%;
+    background-color: rgb(99, 128, 148);
+    height: 450px;
+    border-radius: 2%;
+    overflow: hidden;
+}
+
+th {
+    border: 1px solid red;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+#show {
+    margin-left: 40%;
+}
+
+
+@media only screen and (max-width: 700px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #input-container {
+        margin-left: 0;
+        /* width: 90%; */
+        margin: 3% auto;
+    }
+
+    #table {
+        width: 90%;
+        overflow-x: auto;
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}

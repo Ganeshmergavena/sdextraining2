@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="D:\node\node_modules\bootstrap-icons\icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" href="https://www.sdex.in/wp-content/uploads/2020/09/sdex-final-logo-2048x621.png"
+        type="image/x-icon">
+</head>
+
+<body>
+
+   
+    <button id="theme-toggle" class="btn btn-light">
+        <i id="icon-light" class="fas fa-sun"></i>
+        <i id="icon-dark"  class="fas fa-moon"></i>
+      </button>
+
+    <div id="container" class="row">
+        <div id="input-container" class="col-sm-4">
+            <h4 style="text-align:center;">ui form post/update</h4>
+            <form action="container 1" id="form-1">
+                <label class="integer" for="userid"><i class="bi bi-person"></i>User Id:</label><br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-people-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                </svg>
+                <input type="number" id="userid" class="form-control" name="userid" placeholder="enter userid"><br>
+                <label class="pass" for="pass">ID: <i class="bi bi-5-circle-fill"></i></label><br>
+                <input type="pass" id="pass" class="form-control" name="pass" placeholder="enter id"><br>
+                <label class="title" for="title">Title:<i class="bi bi-card-text"></i></label><br>
+                <input type="text" name="title" class="form-control" id="title" placeholder="textarrea" required>
+                <br>
+                <div class="form-check">
+                    <label class="completed"> completed:</label>
+                    <input type="checkbox" name="completed" id="completed">
+                    <br>
+                </div>
+                <input id="show" class="btn btn-success" type="submit" value="submit">
+            </form>
+        </div>
+        <div id="table" class="col-sm-7">
+            <h2 id="Table main"></h2>
+            <h3 id="tag">TABLE FORM</h3>
+            <table  id =datatable class="table table-success table-striped table table-primary">
+                <!-- <thead> -->
+                <tr>
+                    <th>user ID</th>
+                    <th>ID</th>
+                    <th>tittle</th>
+                    <th>completed</th>
+                    <th>Delete</th>
+                    <th>update</th>
+                </tr>
+                <!-- </thead> -->
+                <tbody id="tablebody"></tbody>
+            </table>
+            <!-- <div id="pagination"></div> -->
+            <div id="pagination" class="pagination-container"></div>
+
+        </div>
+
+    </div>
+    </div>
+
+    <script src="./bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</div>
+
+</html>
